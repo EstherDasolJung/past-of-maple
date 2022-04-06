@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Hero_Ctrl : MonoBehaviour
 {
-    KeyCode key;
+    Vector2 HeroPoint = Vector2.zero;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        HeroPoint = this.gameObject.transform.position;
     }
 
     // Update is called once per frame
@@ -23,15 +23,10 @@ public class Hero_Ctrl : MonoBehaviour
             KeyBoardMove(3);
         else if(Input.GetKey(KeyCode.DownArrow))
             KeyBoardMove(4);
-        else if(Input.GetKey(KeyCode.Ctrl))
+        else if(Input.GetKey(KeyCode.LeftControl))
             KeyBoardMove(5);
-            
-        switch(key) //아 스위치문 쓰고싶다...
-        {
-            case KeyCode.RightArrow:
-                Debug.Log("오른쪽 화살표 입력");
-                break;
-        }
+        else if (Input.GetKey(KeyCode.RightControl))
+            KeyBoardMove(5);
     }
     
     void KeyBoardMove(int key)
@@ -39,27 +34,32 @@ public class Hero_Ctrl : MonoBehaviour
         switch(key)
         {
             case 1:
-                transform.position.x -= 1.0f * Time.deltaTime;
+                Debug.Log("왼쪽 화살표 클릭");
+                HeroPoint.x -= 1.0f * Time.deltaTime;
                 break;
                 
             case 2:
-                transform.position.x += 1.0f * Time.deltaTime;
+                Debug.Log("오른쪽 화살표 클릭");
+                HeroPoint.x += 1.0f * Time.deltaTime;
                 break;
                 
             case 3:
+                Debug.Log("위쪽 화살표 클릭");
                 FloorUp();
                 break;
                 
             case 4:
+                Debug.Log("아래쪽 화살표 클릭");
                 FloorDown();
                 break;
             
             case 5:
+                Debug.Log("컨트롤 클릭");
                 Jump();
                 break;
                 
             default:
-                state(idle);
+                //state(idle);
                 break;
             
         }
@@ -67,18 +67,18 @@ public class Hero_Ctrl : MonoBehaviour
     
     void FloorUp()
     {
-        if(Uprope = false)
-            return;
-        
-        transform.position.y += 1.0f * Time.deltaTime;
+        //if(Uprope = false)
+        //    return;
+
+        HeroPoint.y += 1.0f * Time.deltaTime;
     }
     
     void FloorDown()
     {
-        if(Downrope = false)
-            return;
-        
-        transform.position.y -= 1.0f * Time.deltaTime;
+        //if(Downrope = false)
+        //    return;
+
+        HeroPoint.y -= 1.0f * Time.deltaTime;
     }
     
     void Jump()
@@ -86,6 +86,6 @@ public class Hero_Ctrl : MonoBehaviour
         if(transform.position.y > 10.0f)
             return;
             
-        //점프 구현하기 *https://angliss.tistory.com/292?category=861686
+        //점프 구현하기 https://angliss.tistory.com/292?category=861686
     }
 }
