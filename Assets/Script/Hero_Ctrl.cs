@@ -4,6 +4,22 @@ using UnityEngine;
 
 public class Hero_Ctrl : MonoBehaviour
 {
+    //https://blog.naver.com/dusdkel/222532923128
+    static private readonly KeyCode[] keyCodes = System.Enum.GetValues(typeof(KeyCode))
+        .Cast<KeyCode>().Where(k => ((int)k < (int)KeyCode.Mouse0)).ToArray();
+ 
+    static public KeyCode? GetCurrentKey()
+    {
+        for (int i = 0; i < keyCodes.Length; i++)
+        {
+            if (Input.GetKey(keyCodes[i]))
+            {
+                return keyCodes[i];
+            }
+        }
+        return null;
+    }
+
     Vector2 HeroPoint = Vector2.zero;
 
     // Start is called before the first frame update
@@ -15,6 +31,51 @@ public class Hero_Ctrl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.anyKey)
+        {
+            switch (GetKey.GetCurrentKey())
+            {
+                case KeyCode.LeftArrow :
+                    Debug.Log("왼쪽 화살표 클릭");
+                    HeroPoint.x -= 1.0f * Time.deltaTime;
+                    break;
+                    
+                case KeyCode.RightArrow :
+                    Debug.Log("오른쪽 화살표 클릭");
+                    HeroPoint.x += 1.0f * Time.deltaTime;
+                    break;
+                    
+                case KeyCode.UpArrow :
+                    Debug.Log("위쪽 화살표 클릭");
+                    //if(Uprope = false)
+                    //    break;
+                    
+                    HeroPoint.y += 1.0f * Time.deltaTime;
+                    break;
+                    
+                case KeyCode.DownArrow :
+                    Debug.Log("아래쪽 화살표 클릭");
+                    //if(Downrope = false)
+                    //    break;
+
+                    HeroPoint.y -= 1.0f * Time.deltaTime;
+                    break;
+                    
+                case KeyCode.LeftControl || KeyCode.RightControl :
+                    Debug.Log("컨트롤 클릭");
+                    if(transform.position.y > 10.0f) //점프 제한 조건
+                        break;
+            
+                    //점프 구현하기 https://angliss.tistory.com/292?category=861686
+                    break;
+                    
+                default :
+                    //state(idle);
+                    break;
+            }
+        }
+        
+        /*
         if(Input.GetKey(KeyCode.LeftArrow))
             KeyBoardMove(1);
         else if(Input.GetKey(KeyCode.RightArrow))
@@ -26,9 +87,10 @@ public class Hero_Ctrl : MonoBehaviour
         else if(Input.GetKey(KeyCode.LeftControl))
             KeyBoardMove(5);
         else if (Input.GetKey(KeyCode.RightControl))
-            KeyBoardMove(5);
+            KeyBoardMove(5);        
+        */
     }
-    
+    /*
     void KeyBoardMove(int key)
     {
         switch(key)
@@ -88,4 +150,5 @@ public class Hero_Ctrl : MonoBehaviour
             
         //점프 구현하기 https://angliss.tistory.com/292?category=861686
     }
+    */
 }
