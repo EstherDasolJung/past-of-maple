@@ -35,32 +35,32 @@ public class Hero_Ctrl : MonoBehaviour
         {
             switch (GetKey.GetCurrentKeyDown())
             {
-                case KeyCode.LeftArrow
+                case KeyCode.LeftArrow :
                     Debug.Log("왼쪽 화살표 클릭");
                     HeroPoint.x -= 1.0f * Time.deltaTime;
                     break;
                     
-                case KeyCode.RightArrow
+                case KeyCode.RightArrow :
                     Debug.Log("오른쪽 화살표 클릭");
                     HeroPoint.x += 1.0f * Time.deltaTime;
                     break;
                     
-                case KeyCode.UpArrow
+                case KeyCode.UpArrow :
                     Debug.Log("위쪽 화살표 클릭");
                     FloorUp();
                     break;
                     
-                case KeyCode.DownArrow
+                case KeyCode.DownArrow :
                     Debug.Log("아래쪽 화살표 클릭");
                     FloorDown();
                     break;
                     
-                case KeyCode.LeftControl || KeyCode.RightControl
+                case KeyCode.LeftControl || KeyCode.RightControl :
                     Debug.Log("컨트롤 클릭");
                     Jump();
                     break;
                     
-                default:
+                default :
                     //state(idle);
                     break;
             }
