@@ -8,11 +8,11 @@ public class Hero_Ctrl : MonoBehaviour
     static private readonly KeyCode[] keyCodes = System.Enum.GetValues(typeof(KeyCode))
         .Cast<KeyCode>().Where(k => ((int)k < (int)KeyCode.Mouse0)).ToArray();
  
-    static public KeyCode? GetCurrentKeyDown()
+    static public KeyCode? GetCurrentKey()
     {
         for (int i = 0; i < keyCodes.Length; i++)
         {
-            if (Input.GetKeyDown(keyCodes[i]))
+            if (Input.GetKey(keyCodes[i]))
             {
                 return keyCodes[i];
             }
@@ -31,9 +31,9 @@ public class Hero_Ctrl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.anyKeyDown)
+        if (Input.anyKey)
         {
-            switch (GetKey.GetCurrentKeyDown())
+            switch (GetKey.GetCurrentKey())
             {
                 case KeyCode.LeftArrow :
                     Debug.Log("왼쪽 화살표 클릭");
