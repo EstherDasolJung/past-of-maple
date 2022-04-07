@@ -66,6 +66,7 @@ public class Hero_Ctrl : MonoBehaviour
             }
         }
         
+        /*
         if(Input.GetKey(KeyCode.LeftArrow))
             KeyBoardMove(1);
         else if(Input.GetKey(KeyCode.RightArrow))
@@ -77,9 +78,10 @@ public class Hero_Ctrl : MonoBehaviour
         else if(Input.GetKey(KeyCode.LeftControl))
             KeyBoardMove(5);
         else if (Input.GetKey(KeyCode.RightControl))
-            KeyBoardMove(5);
+            KeyBoardMove(5);        
+        */
     }
-    
+    /*
     void KeyBoardMove(int key)
     {
         switch(key)
@@ -115,7 +117,7 @@ public class Hero_Ctrl : MonoBehaviour
             
         }
     }
-    
+    */
     void FloorUp()
     {
         //if(Uprope = false)
