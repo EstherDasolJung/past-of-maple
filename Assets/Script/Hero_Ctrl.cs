@@ -4,6 +4,22 @@ using UnityEngine;
 
 public class Hero_Ctrl : MonoBehaviour
 {
+    //https://blog.naver.com/dusdkel/222532923128
+    static private readonly KeyCode[] keyCodes = System.Enum.GetValues(typeof(KeyCode))
+        .Cast<KeyCode>().Where(k => ((int)k < (int)KeyCode.Mouse0)).ToArray();
+ 
+    static public KeyCode? GetCurrentKeyDown()
+    {
+        for (int i = 0; i < keyCodes.Length; i++)
+        {
+            if (Input.GetKeyDown(keyCodes[i]))
+            {
+                return keyCodes[i];
+            }
+        }
+        return null;
+    }
+
     Vector2 HeroPoint = Vector2.zero;
 
     // Start is called before the first frame update
@@ -15,6 +31,41 @@ public class Hero_Ctrl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.anyKeyDown)
+        {
+            switch (GetKey.GetCurrentKeyDown())
+            {
+                case KeyCode.LeftArrow
+                    Debug.Log("왼쪽 화살표 클릭");
+                    HeroPoint.x -= 1.0f * Time.deltaTime;
+                    break;
+                    
+                case KeyCode.RightArrow
+                    Debug.Log("오른쪽 화살표 클릭");
+                    HeroPoint.x += 1.0f * Time.deltaTime;
+                    break;
+                    
+                case KeyCode.UpArrow
+                    Debug.Log("위쪽 화살표 클릭");
+                    FloorUp();
+                    break;
+                    
+                case KeyCode.DownArrow
+                    Debug.Log("아래쪽 화살표 클릭");
+                    FloorDown();
+                    break;
+                    
+                case KeyCode.LeftControl || KeyCode.RightControl
+                    Debug.Log("컨트롤 클릭");
+                    Jump();
+                    break;
+                    
+                default:
+                    //state(idle);
+                    break;
+            }
+        }
+        
         if(Input.GetKey(KeyCode.LeftArrow))
             KeyBoardMove(1);
         else if(Input.GetKey(KeyCode.RightArrow))
