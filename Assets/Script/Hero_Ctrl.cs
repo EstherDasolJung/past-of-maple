@@ -47,17 +47,26 @@ public class Hero_Ctrl : MonoBehaviour
                     
                 case KeyCode.UpArrow :
                     Debug.Log("위쪽 화살표 클릭");
-                    FloorUp();
+                    //if(Uprope = false)
+                    //    break;
+                    
+                    HeroPoint.y += 1.0f * Time.deltaTime;
                     break;
                     
                 case KeyCode.DownArrow :
                     Debug.Log("아래쪽 화살표 클릭");
-                    FloorDown();
+                    //if(Downrope = false)
+                    //    break;
+
+                    HeroPoint.y -= 1.0f * Time.deltaTime;
                     break;
                     
                 case KeyCode.LeftControl || KeyCode.RightControl :
                     Debug.Log("컨트롤 클릭");
-                    Jump();
+                    if(transform.position.y > 10.0f) //점프 제한 조건
+                        break;
+            
+                    //점프 구현하기 https://angliss.tistory.com/292?category=861686
                     break;
                     
                 default :
@@ -117,7 +126,7 @@ public class Hero_Ctrl : MonoBehaviour
             
         }
     }
-    */
+    
     void FloorUp()
     {
         //if(Uprope = false)
@@ -141,4 +150,5 @@ public class Hero_Ctrl : MonoBehaviour
             
         //점프 구현하기 https://angliss.tistory.com/292?category=861686
     }
+    */
 }
