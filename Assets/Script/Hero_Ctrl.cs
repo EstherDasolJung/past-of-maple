@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Hero_Ctrl : MonoBehaviour
 {
     //https://blog.naver.com/dusdkel/222532923128
-    static private readonly KeyCode[] keyCodes = System.Enum.GetValues(typeof(KeyCode))
-        .Cast<KeyCode>().Where(k => ((int)k < (int)KeyCode.Mouse0)).ToArray();
+    static private readonly KeyCode[] keyCodes = System.Enum.GetValues(typeof(KeyCode)).Cast<KeyCode>().Where(k => ((int)k < (int)KeyCode.Mouse0)).ToArray();
  
     static public KeyCode? GetCurrentKey()
     {
@@ -33,7 +33,7 @@ public class Hero_Ctrl : MonoBehaviour
     {
         if (Input.anyKey)
         {
-            switch (GetKey.GetCurrentKey())
+            switch (GetCurrentKey())
             {
                 case KeyCode.LeftArrow :
                     Debug.Log("왼쪽 화살표 클릭");
@@ -60,8 +60,8 @@ public class Hero_Ctrl : MonoBehaviour
 
                     HeroPoint.y -= 1.0f * Time.deltaTime;
                     break;
-                    
-                case KeyCode.LeftControl || KeyCode.RightControl :
+
+                case KeyCode.LeftControl://KeyCode.RightControl :
                     Debug.Log("컨트롤 클릭");
                     if(transform.position.y > 10.0f) //점프 제한 조건
                         break;

@@ -1,7 +1,85 @@
 fileFormatVersion: 2
 guid: ae0fff4ccf3e52e499837d9eb743e3d2
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 843179924400626008
+    second: DieHero_0
+  - first:
+      213: -4054962739138988567
+    second: DieHero_1
+  - first:
+      213: -6377143121002740511
+    second: DieHero_2
+  - first:
+      213: 7439132505120364277
+    second: DieHero_3
+  - first:
+      213: 8706018611345758419
+    second: DieHero_4
+  - first:
+      213: -8813076602091830538
+    second: DieHero_5
+  - first:
+      213: 747203644248740939
+    second: DieHero_6
+  - first:
+      213: 164962773956266974
+    second: DieHero_7
+  - first:
+      213: 2398646899918998714
+    second: DieHero_8
+  - first:
+      213: 2993166898904902938
+    second: DieHero_9
+  - first:
+      213: 5381702702705372793
+    second: DieHero_10
+  - first:
+      213: 6057825728449264296
+    second: DieHero_11
+  - first:
+      213: 3270860109685155470
+    second: DieHero_12
+  - first:
+      213: -2294294641179301005
+    second: DieHero_13
+  - first:
+      213: 4089059911790222653
+    second: DieHero_14
+  - first:
+      213: 1659884251534281282
+    second: DieHero_15
+  - first:
+      213: -8561128870746554405
+    second: DieHero_16
+  - first:
+      213: -8339709530492821661
+    second: DieHero_17
+  - first:
+      213: -5618454978770072531
+    second: DieHero_18
+  - first:
+      213: 5326680946313239700
+    second: DieHero_19
+  - first:
+      213: 6894787503324677931
+    second: DieHero_20
+  - first:
+      213: 2172130293974109123
+    second: DieHero_21
+  - first:
+      213: 5666057130913166642
+    second: DieHero_22
+  - first:
+      213: -7224935474551669810
+    second: DieHero_23
+  - first:
+      213: 8872542446117530535
+    second: DieHero_24
+  - first:
+      213: -5004800039376169585
+    second: DieHero_25
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +118,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -71,9 +149,444 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: DieHero_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 107
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 859d3a38ca393bb00800000000000000
+      internalID: 843179924400626008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DieHero_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 107
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5fc247fd0e9b7c0800000000000000
+      internalID: -4054962739138988567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DieHero_2
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 107
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e44ec67e16df77a0800000000000000
+      internalID: -6377143121002740511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DieHero_3
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 107
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6d2c4699b1d3760800000000000000
+      internalID: 7439132505120364277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DieHero_4
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 107
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d81431fccdf1d870800000000000000
+      internalID: 8706018611345758419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DieHero_5
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 107
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2820a2689a1b580800000000000000
+      internalID: -8813076602091830538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DieHero_6
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 107
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b44d25e61c99e5a00800000000000000
+      internalID: 747203644248740939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DieHero_7
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 107
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb83d6d4c01a4200800000000000000
+      internalID: 164962773956266974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DieHero_8
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 107
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc834b95a4b94120800000000000000
+      internalID: 2398646899918998714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DieHero_9
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 107
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d2fa2af6dd98920800000000000000
+      internalID: 2993166898904902938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DieHero_10
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 107
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e63893816afaa40800000000000000
+      internalID: 5381702702705372793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DieHero_11
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 107
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aab07f7768b11450800000000000000
+      internalID: 6057825728449264296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DieHero_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 53
+        width: 85
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8667c3a0fd646d20800000000000000
+      internalID: 3270860109685155470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DieHero_13
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 53
+        width: 85
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37bec66fd270920e0800000000000000
+      internalID: -2294294641179301005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DieHero_14
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 54
+        width: 89
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ddb8333524fb830800000000000000
+      internalID: 4089059911790222653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DieHero_15
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 55
+        width: 96
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a47fcaee7190710800000000000000
+      internalID: 1659884251534281282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DieHero_17
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 55
+        width: 80
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36f19012e56634c80800000000000000
+      internalID: -8339709530492821661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DieHero_21
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 54
+        width: 90
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cb01327ef4f42e10800000000000000
+      internalID: 2172130293974109123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DieHero_25
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 4
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f855f1971e06b8ab0800000000000000
+      internalID: -5004800039376169585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
