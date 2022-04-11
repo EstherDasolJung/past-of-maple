@@ -37,28 +37,34 @@ public class Hero_Ctrl : MonoBehaviour
             {
                 case KeyCode.LeftArrow :
                     Debug.Log("왼쪽 화살표 클릭");
-                    transform.Translate(new Vecter3(Speed * Time.deltatime,0,0));
+                    this.gameObject.GetComponent<SpriteRenderer>().flipX = false;
+                    transform.posion += Vector3.Left * Speed;
+                    
+                    //transform.Translate(new Vector3(Speed * Time.deltatime,0,0));
                     break;
                     
                 case KeyCode.RightArrow :
                     Debug.Log("오른쪽 화살표 클릭");
-                    transform.Translate(new Vecter3(-Speed * Time.deltatime,0,0));
+                    this.gameObject.GetComponent<SpriteRenderer>().flipX = true;
+                    transform.posion += Vector3.Right * Speed;
+                    
+                    //transform.Translate(new Vector3(-Speed * Time.deltatime,0,0));
                     break;
                     
                 case KeyCode.UpArrow :
                     Debug.Log("위쪽 화살표 클릭");
                     //if(Uprope = false)
                     //    break;
-                    
-                    transform.Translate(new Vecter3(0,Speed * Time.deltatime,0));
+                    transform.posion += Vector3.Up * Speed;
+                    //transform.Translate(new Vector3(0,Speed * Time.deltatime,0));
                     break;
                     
                 case KeyCode.DownArrow :
                     Debug.Log("아래쪽 화살표 클릭");
                     //if(Downrope = false)
                     //    break;
-
-                    transform.Translate(new Vecter3(0,-Speed * Time.deltatime,0));
+                    transform.posion += Vector3.Down * Speed;
+                    //transform.Translate(new Vector3(0,-Speed * Time.deltatime,0));
                     break;
 
                 case KeyCode.LeftControl://KeyCode.RightControl :
